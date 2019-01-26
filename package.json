@@ -1,0 +1,23 @@
+{
+  "name": "errortracker",
+  "version": "1.0.0",
+  "description": "Error tracker is a WEB API application for global tracking and reporting your errors, the application will save errors through an API request and send a phone notification. you can also track your errors through a dashboard and treat them as you like",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaycalKhe/ErrorTracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FaycalKhe/ErrorTracker/issues"
+  },
+  "homepage": "https://github.com/FaycalKhe/ErrorTracker#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
