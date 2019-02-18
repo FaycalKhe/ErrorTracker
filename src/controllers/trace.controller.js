@@ -4,7 +4,7 @@ const trace = require('../models/Trace');
 module.exports = {
     create: (req, res) => {
         //validate request
-        if(!req.body.content)
+        if(!req.body)
             return res.status(400).send({
                 message: 'Trace content cannot be empty'
             });
