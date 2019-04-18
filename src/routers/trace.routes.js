@@ -6,7 +6,7 @@ module.exports = (app) => {
 
     //Retrieve all traces
     app.get('/trace', traces.findAll);
+
+    //Retrieve specefic trace
     app.get('/trace/:traceId', traces.findOne);
-    app.put('/trace/:traceId', traces.update);
-    app.delete('/trace/:traceId', traces.delete);
 }
