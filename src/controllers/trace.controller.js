@@ -10,18 +10,21 @@ module.exports = {
             });
         
         const newTrace = new trace({
+            Oid: req.body.Priority || 0,
+            Level: req.body.Priority || 0,
+            FunctionName: req.body.Priority || "Empty Function Name",
+            Parameters:  req.body.Priority || "Empty Parameters",
+            ServiceID:  req.body.Priority || "Empty ServiceID",
+            CallStack:  req.body.Priority || "Empty Call Stack",
+            LicenseID: req.body.Priority || 0,
             Priority: req.body.Priority || 0,
             Message: req.body.Message || "Empty message",
-            Status: req.body.Status || 0,
-            Note: req.body.Note || "Empty note",
-            Type: req.body.Type || 0,
-            Service: req.body.Service || "Empty service"
         });
         //Save the new trace to database
 
         newTrace.save()
             .then(data => {
-                res.send(data)
+                res.send("Trace Saved")
             })
             .catch(err => {
                 res.status(500).send({
